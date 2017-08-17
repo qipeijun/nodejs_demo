@@ -2,13 +2,13 @@
  * @Author: qipeijun 
  * @Date: 2017-08-17 17:02:20 
  * @Last Modified by: 
- * @Last Modified time: 2017-08-17 17:20:02
+ * @Last Modified time: 2017-08-17 17:33:54
  */
 "use strict"
 
 var fs  = require('fs');
 
-// 打开一个流
+// 打开一个流      --读取流
 var rs = fs.createReadStream('./test.txt','utf-8');
 
 // 读取 文件 流
@@ -28,6 +28,7 @@ rs.on('error',function (err) {
  })
 
 
+ //      --写入流
  var ws1 = fs.createWriteStream('./test.txt','utf-8');
  ws1.write('使用stream写入文本数据....\n');
  ws1.write('END');
