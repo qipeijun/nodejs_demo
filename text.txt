@@ -1,0 +1,2 @@
+hello nodejs 
+我是nodejs fs模块生成的文件
