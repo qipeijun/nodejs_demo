@@ -8,7 +8,7 @@
 "use strict"
 
 // 获取文件信息
-var fs = require('fs');
+const fs = require('fs');
 
 
 fs.stat('./test.txt',function (err,stat) {

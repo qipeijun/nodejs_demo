@@ -1,2 +1,4 @@
-使用stream写入文本数据....
-END
+hello nodejs 
+我是nodejs fs模块生成的文件
+
+现在我要copy text.txt 到 test.txt

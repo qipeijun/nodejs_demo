@@ -6,10 +6,10 @@
  */
 "use strict"
 
-var fs  = require('fs');
+const fs  = require('fs');
 
 // 打开一个流      --读取流
-var rs = fs.createReadStream('./test.txt','utf-8');
+const rs = fs.createReadStream('./test.txt','utf-8');
 
 // 读取 文件 流
 rs.on('data',function (chunk) { 
@@ -29,7 +29,7 @@ rs.on('error',function (err) {
 
 
  //      --写入流
- var ws1 = fs.createWriteStream('./test.txt','utf-8');
+ const ws1 = fs.createWriteStream('./test.txt','utf-8');
  ws1.write('使用stream写入文本数据....\n');
  ws1.write('END');
  ws1.end();

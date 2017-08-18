@@ -2,11 +2,11 @@
  * @Author: qipeijun 
  * @Date: 2017-08-15 13:27:11 
  * @Last Modified by: 
- * @Last Modified time: 2017-08-17 16:14:57
+ * @Last Modified time: 2017-08-18 18:18:51
  */
 
 "use strict";
-var fs = require("fs");
+const fs = require("fs");
 
 fs.readFile("./test.txt", function(err, data) {
   if (err) {
@@ -27,7 +27,7 @@ fs.readFile("./test.txt", function(err, data) {
 
 // fs 同步读取文件  不接收回调函数，直接返回结果
 // try {
-//   var data = fs.readFileSync("./test.txt", "utf-8");
+//   const data = fs.readFileSync("./test.txt", "utf-8");
 //   console.log(data);
 // } catch (error) {
 //   //error
@@ -39,7 +39,7 @@ fs.readFile("./test.txt", function(err, data) {
 // ----------写文件
 function readIn(text) {
     // text = text.replace(/^最后|)$/g,'')
-    var xdata = `${text}\n最后修改于${new Date().toLocaleDateString()} ${ new Date().toLocaleTimeString()}`;
+    const xdata = `${text}\n最后修改于${new Date().toLocaleDateString()} ${ new Date().toLocaleTimeString()}`;
     fs.writeFile("./test.txt", xdata, function(err) {
         if (err) {
         console.log("${err}写入失败");
