@@ -2,14 +2,13 @@
  * @Author: qipeijun 
  * @Date: 2017-08-17 16:15:05 
  * @Last Modified by: 
- * @Last Modified time: 2017-08-24 14:39:59
+ * @Last Modified time: 2017-08-25 10:41:30
  */
 
 "use strict"
 
 // 获取文件信息
 const fs = require('fs');
-
 
 fs.stat('./test.txt',function (err,stat) {
     if (err) {
